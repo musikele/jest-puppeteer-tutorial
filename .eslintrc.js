@@ -6,9 +6,11 @@ module.exports = {
         "jest": true
     },
     "extends": "eslint:recommended",
-    "globals": {
-        "Atomics": "readonly",
-        "SharedArrayBuffer": "readonly"
+    globals: {
+        page: true,
+        browser: true,
+        context: true,
+        jestPuppeteer: true,
     },
     "parserOptions": {
         "ecmaVersion": 2018,
